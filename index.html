@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/ca45ef6ef2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+
+    <title>Template login simple</title>
+    <style>
+        body {
+            font-family: 'Viga', sans-serif;
+        }
+
+        .card-custom {
+            border-top: solid 10px rgb(0, 255, 0);
+            border-radius: 8px;
+        }
+
+        .custom-border {
+            color: rgb(0, 255, 0);
+        }
+
+        .icon-see-password {
+            float: right;
+            margin-right: 6px;
+            margin-top: -29px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .icon-see-password:hover {
+            color: rgba(255, 203, 34, 0.89);
+        }
+
+        .custom-input {
+            border-radius: 8px;
+        }
+    </style>
+    
+</head>
+<body>
+    <body class="bg-primary">
+        <div class="container">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                <div class="card card-custom shadow my-5">
+                    <div class="card-body p-5">
+                        <center>
+                            <h1>Login</h1><br>
+                        </center>
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <i class="fas fa-exclamation-triangle"></i> Incorrect email or password.
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <form action="" method="POST">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email</label>
+                                <input type="text" name="email" class="form-control custom-input"
+                                    id="exampleInputEmail1" placeholder="Enter Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" name="password" class="form-control custom-input"
+                                    id="exampleInputPassword1" placeholder="Password" required>
+                                <span onclick="myFunction()" class="icon-see-password"><i class="fas fa-eye"></i></span>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" name="remember" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Remember password</label>
+                            </div><br>
+                            <center>
+                                <button type="submit" name="login" class="btn btn-primary">Login</button>
+                                <hr>
+                                <a href="#">
+                                    <p>Forgot Password</p>
+                                </a>
+                            </center>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer id="sticky-footer" class="py-3 bg-transparent text-white">
+            <div class="container text-center">
+            <small>© Built with ❤️ by Mohd labib</small>
+            </div>
+        </footer>
+
+        <!-- JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("exampleInputPassword1");
+                if (x.type === "password") {
+                    x.type = "text";
+                } else {
+                    x.type = "password";
+                }
+            }
+        </script>
+    </body>
+
+</html>
