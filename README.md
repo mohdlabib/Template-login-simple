@@ -1,4 +1,7 @@
 # Template-login-simple
-
-have great day ❤️
+<br>
 <img src="login display.png" alt="" >
+<br>
+<center>
+  have great day ❤️
+</center>
